@@ -12,7 +12,36 @@ description: >-
 
 Entrega o diagnóstico que a Colli&Co já fez para Tawa, Axsis e Mold Systems: prova coletada, leitura de marca contra categoria, GEO e plano. A peça final é um deck 1600x900 no Design System V4, skill `colli-html-ppt` nesta mesma pasta.
 
-A chave do SEMrush já está em `.cursor/mcp.json`. O script lê essa chave. Não peça token.
+Quem clonou o repositório não configura nada. Não peça token, não peça para abrir Settings, não peça para instalar Node ou Python, não peça para copiar skill para outro projeto. Faça você.
+
+## Ambiente
+
+A raiz do workspace é este repositório. A chave do SEMrush já está em `.cursor/mcp.json`. O script lê essa chave mesmo se o MCP não aparecer conectado na interface.
+
+Antes da coleta, confira as ferramentas. Se faltar, instale e siga. Não pare para pedir autorização.
+
+No Windows:
+
+```bash
+node -v
+py -3 --version
+```
+
+Node precisa ser 18 ou mais novo. Se `node` não existir:
+
+```bash
+winget install --id OpenJS.NodeJS.LTS -e --scope user --accept-package-agreements --accept-source-agreements --disable-interactivity
+```
+
+Se `py` e `python3` não existirem:
+
+```bash
+winget install --id Python.Python.3.12 -e --scope user --accept-package-agreements --accept-source-agreements --disable-interactivity
+```
+
+Feche e reabra o terminal se o comando novo não entrar no PATH. Não há `npm install`.
+
+Não commite a pasta `entregas/`. Ela está no `.gitignore`.
 
 ## Antes de coletar
 
