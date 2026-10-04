@@ -1,0 +1,10 @@
+interface:
+  display_name: "Colli HTML PPT"
+  short_description: "Cria apresentações HTML no visual Colli&Co"
+  icon_small: "./assets/colli-red.png"
+  icon_large: "./assets/colli-red.png"
+  brand_color: "#E50914"
+  default_prompt: "Use $colli-html-ppt para transformar estes textos aprovados por slide em uma apresentação HTML visual da Colli&Co."
+
+policy:
+  allow_implicit_invocation: true
