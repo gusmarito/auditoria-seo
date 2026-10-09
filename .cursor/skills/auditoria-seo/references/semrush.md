@@ -39,6 +39,22 @@ Banco padrão: `br`. Só mude com `--database` se o mercado do cliente não for 
 | `phrase_these` Ph, Nq, Cp, Co, Nr | Volume das frases de categoria |
 | `phrase_organic` Dn, Ur, Po, limite 5 | Quem ocupa a SERP da frase |
 
+## Estudo aprofundado
+
+`scripts/semrush_kw.py` usa a mesma chave pela API REST e cobre o estudo de palavras-chave e concorrência. Fluxo e regras em [palavras-chave.md](palavras-chave.md).
+
+| Subcomando | Chamadas | Uso no deck |
+| --- | --- | --- |
+| `dominio` | domain_organic (100, Url e Kd), domain_rank_history (36 meses), domain_ranks em todos os bancos, backlinks_refdomains, backlinks_ascore_profile, backlinks_tld | problema macro, série histórica, autoridade, versão em outro idioma |
+| `descobrir` | phrase_fullsearch por semente | ampliar a lista curada |
+| `volumes` | phrase_these em lotes de 100 | estudo por linha de produto e demanda na mesa |
+| `serp` | phrase_organic top 10 | quem ocupa a busca e concorrentes reais |
+| `concorrentes` | domain_ranks e backlinks_overview | comparativo e Authority Score |
+
+Uma entrega completa gasta da ordem de alguns milhares de unidades. Não repita chamadas sem necessidade: os JSON ficam em `entregas/<dominio>/extra/`.
+
+O MCP do SEMrush (`mcp.semrush.com/v2/mcp`) responde `no_subscription` no plano atual: não traz AI Visibility, Traffic Analytics nem Site Audit. Tudo do deck sai da API REST.
+
 ## Como ler o número
 
 - `Organic Traffic` de `domain_ranks` é visita estimada por mês. No slide, chame de tráfego estimado. Nunca chame de clique do Search Console.

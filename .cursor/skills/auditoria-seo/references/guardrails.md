@@ -5,6 +5,8 @@
 - Todo número do deck sai de `resumo.json`, de `_raw/`, de um case deste repositório ou de um dado que o usuário colou na conversa.
 - Se a fonte falhou, o slide registra a lacuna. Exemplo real das auditorias de referência: concorrente que bloqueia crawl; Search Console ausente porque o cliente ainda não é de SEO ativo.
 - Tráfego estimado é Organic Traffic do SEMrush. A frase "não é clique do Search Console" entra no slide de tráfego e no slide de projeção.
+- Medição local contaminada (script de antivírus no Lighthouse) é registrada na fonte do slide de velocidade.
+- Dado que o crawl da amostra padrão não viu (ex.: só páginas /en) não sustenta achado sobre o site em português. Use o crawl completo.
 - Projeção é faixa de 12 meses. Não é meta contratual. Não prometa posição no Google.
 - Title e meta "como ficaria" são proposta. O slide diz isso.
 - Não converta `Traffic (%)` em visitas multiplicando no escuro. Se precisar de visitas por termo e a API não trouxe a visita absoluta, mostre volume, posição e a fatia.
@@ -24,11 +26,15 @@ Premissa obrigatória: a V4 especifica e o cliente publica, salvo quando o usuá
 
 A frente Site N1 entra só se a evidência mostrar que o site atual não carrega a estratégia. Sinais usados na Tawa: sem página por oferta, sem formulário, template com dado falso, mobile quebrado na primeira dobra com captura de tela. Remendo de title e meta fica na onda de 30 dias mesmo assim.
 
-Sem essa evidência, a proposta é só SEO Growth, como na Axsis.
+Sem essa evidência, o plano é só SEO recorrente.
 
-## Preço padrão
+## Proposta e preço
 
-Use somente se o usuário não passar outro valor.
+Padrão: **sem valores**. O deck não é pitch. O fechamento evidencia que o plano exige a contratação do **SEO recorrente com um especialista sênior da V4** (slide de modelo de execução, ver [narrativa.md](narrativa.md)).
+
+Escopo do SEO recorrente, igual nas auditorias de referência: auditoria técnica contínua, indexação, schema, titles, descriptions, headings, keywords e intenção, 4 conteúdos por mês, páginas de produto, linkagem interna, backlinks, SEO local quando couber, monitoramento, relatório e reunião mensal.
+
+Só coloque preço se o usuário pedir. Nesse caso, sem outro valor informado, use a tabela abaixo.
 
 | Frente | Condição | Valor |
 | --- | --- | --- |
@@ -36,7 +42,9 @@ Use somente se o usuário não passar outro valor.
 | Site novo N1 | só no caso acima | R$ 12.000, entrega única, 60 a 90 dias |
 | As duas juntas | desconto de 20% só no SEO | SEO a R$ 3.600 por mês. Site diluído em 12 parcelas de R$ 1.000. Mês somado R$ 4.600. Ciclo R$ 55.200 |
 
-Escopo do SEO Growth, igual nas auditorias de referência: auditoria técnica contínua, indexação, schema, titles, descriptions, headings, keywords e intenção, 4 posts por mês, linkagem interna, backlinks, SEO local, monitoramento, relatório e reunião mensal.
+## Matriz GUT e metas
+
+As notas de gravidade, urgência e tendência são leitura da V4 e o slide diz isso. As metas de 12 meses são faixas, seguindo a regra de projeção acima, mais duas metas de entrega: produtos com página própria (atual para total do portfólio) e termos de serviço no top 20 (atual para 10 a 20). Velocidade mobile: faixa de 50 a 70 quando a plataforma limita (Wix, Squarespace), 70 a 85 quando o vilão é corrigível no código.
 
 ## Voz
 
